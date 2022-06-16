@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const hbs = require("hbs");
+const port = process.env.PORT || 8000;
 const geocode =require("./utils/geocode");
 const forcast =require("./utils/forcast");
 
@@ -103,6 +104,6 @@ app.get("*",(req,res)=>{
     })
 });
 
-app.listen(8000,()=>{
-    console.log("listing on port 8000");
+app.listen(port,()=>{
+    console.log("listing on port "+port);
 });
