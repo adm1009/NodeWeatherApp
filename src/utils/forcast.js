@@ -12,7 +12,7 @@ request({url,json:true},(error,{body})=>{
         callback("url issue",undefined);
     }
     else{
-        callback(undefined,"todays forcast is: " +body.current.weather_descriptions[0]);
+        callback(undefined,"todays forcast is: " +body.current.weather_descriptions[0]+", todays temp is "+body.current.temperature);
     }
 })};
 
