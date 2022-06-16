@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "express.js",
   "scripts": {
-    "start":"node src/express.js"
+    "start": "node src/express.js",
+    "dev": "nodemon src/express.js"
   },
   "keywords": [],
   "author": "",
